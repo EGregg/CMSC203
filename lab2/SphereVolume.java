@@ -11,8 +11,10 @@ double volumeSphere;
 
 System.out.println("What is the diameter of a sphere");
 userDiameter = stdin.nextDouble();
-radius = userDiameter/2.0;
-volumeSphere = (4.0/3.0)*Math.PI*Math.pow(radius,3);
+radius = (double)(userDiameter/2.0);
+//System.out.println(radius);
+volumeSphere = ((double)(4.0/3.0)*Math.PI*Math.pow(radius,3));
+//System.out.println((double)(4.0/3.0)*Math.PI);
 
 System.out.println("Given a diameter of " + userDiameter + ", the volume of the sphere is " + volumeSphere);
 } 
