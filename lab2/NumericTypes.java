@@ -18,7 +18,7 @@ public class NumericTypes {
 		double fToC; // temperature in Celsius
 		double average; // arithmetic average
 		String output; // line of output to print out
-		double userTemp;//Task #2 declare a variable to hold the user’s temperature
+		double userTemp;//Task #2 declare a variable to hold the userâ€™s temperature
 		
 		System.out.println("Please input score1:");//Task #2 prompt user to input score1
 		score1 = stdin.nextInt();//Task #2 read score1 
@@ -26,7 +26,7 @@ public class NumericTypes {
 		score2 = stdin.nextInt();//Task #2 read score2 
 		
 		// Find an arithmetic average
-		average = (score1 + score2) / NUMBER;
+		average = (double)(score1 + score2) / NUMBER;
 		output = score1 + " and " + score2 + " have an average of " + average;	
 		System.out.println(output);
 		
@@ -36,10 +36,11 @@ public class NumericTypes {
 		System.out.println(output);
 		System.out.println("Please enter a temperature:");
 		userTemp = stdin.nextDouble();//Task #2 prompt user to input another temperature
-		//Task #2 read the user’s temperature in Fahrenheit -- What does this mean? Aren't we inputting temps in Fahrenheit?
-		fToC = (5.0/9.0) * (userTemp - 32); //Task #2 convert the user’s temperature to Celsius
-		System.out.println("The users temp in Celsius is: " + fToC);//Task #2 print the user’s temperature in Celsius
+		//Task #2 read the userâ€™s temperature in Fahrenheit -- What does this mean? Aren't we inputting temps in Fahrenheit?
+		fToC = (5.0/9.0) * (userTemp - 32); //Task #2 convert the userâ€™s temperature to Celsius
+		System.out.println("The users temp in Celsius is: " + fToC);//Task #2 print the userâ€™s temperature in Celsius
 		System.out.println("Goodbye"); // to show that the program is ended	
 	}
 }
+
 
