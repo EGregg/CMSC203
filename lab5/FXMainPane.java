@@ -1,6 +1,5 @@
 
 
-
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -59,6 +58,9 @@ public class FXMainPane extends VBox {
 		label1 = new Label("Feedback");
 		txtfield1 = new TextField();
 		
+		//set the margins of the buttons
+		Insets inset = new Insets(15);
+		
 		//  instantiate the HBoxes
 		hbox1 = new HBox();
 		hbox2 = new HBox();
@@ -75,12 +77,12 @@ public class FXMainPane extends VBox {
 		dataManager = new DataManager();
 		
 		//  set margins and set alignment of the components
-		HBox.setMargin(txtfield1,new Insets(10,0,30,10));
-		HBox.setMargin(button1,new Insets(10,10,10,10));
-		HBox.setMargin(button2,new Insets(10,10,10,10));
-		HBox.setMargin(button3,new Insets(10,10,10,10));
-		HBox.setMargin(button4,new Insets(10,10,10,10));
-		HBox.setMargin(button5,new Insets(10,10,10,10));
+		HBox.setMargin(txtfield1, inset);
+		HBox.setMargin(button1,inset);
+		HBox.setMargin(button2,inset);
+		HBox.setMargin(button3,inset);
+		HBox.setMargin(button4,inset);
+		HBox.setMargin(button5,inset);
 		hbox1.setAlignment(Pos.CENTER);
 		hbox2.setAlignment(Pos.CENTER);
 		
