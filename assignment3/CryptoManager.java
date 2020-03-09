@@ -1,12 +1,15 @@
 package assignment3;
 
 /**
- * 
- * @author Edward Gregg
- * @class CMSC203 Spring 2020
- * @instructor Prof. Gregoriy Grinberg
- * @assignment3 a Java program to encrypt and decrypt a phrase using Caesar and Bellaso approaches, each insecure by modern standards.
- *
+ * Class: CMSC203 Spring 2020
+ * Program: assignment3
+ * Instructor: Prof. Gregoriy Grinberg
+ * Description: a Java program to encrypt and decrypt a phrase using Caesar and Bellaso approaches
+ * Due: 03/08/2020
+ * I pledge that I have completed the programming assignment independently.
+ * I have not copied the code from a student or any source.
+ * I have not given my code to any student.
+ * Print your Name here: Edward Gregg
  */
 
 
@@ -43,7 +46,7 @@ public class CryptoManager {
 		for (int i = 0; i<plainText.length(); i++) {
 			int ascii = (plainText.charAt(i) + key);
 			while(ascii > UPPER_BOUND) {
-				ascii += RANGE;
+				ascii -= RANGE;
 			}
 		encrypted += (char)ascii;
 		}
@@ -65,11 +68,13 @@ public class CryptoManager {
 			int key = i % bellasoStr.length();
 			bellasoStr += bellasoStr.charAt(key);
 			int check = (plainText.charAt(i) + bellasoStr.charAt(i));
+			System.out.println(plainText.charAt(i) + " " + bellasoStr.charAt(i));
+			//System.out.print(check + " ");
 			while (check > UPPER_BOUND) {
 				check -= RANGE;
 			}
 			//System.out.print(bellasoStr + " ");
-			System.out.print(check + " ");
+			//System.out.print(check + " ");
 			
 			encrypted+=(char)check;
 		}
