@@ -1,5 +1,18 @@
 
 /**
+ * Class: CMSC203 Spring 2020
+ * Program: Lab3 MovieDriver
+ * Instructor: Prof. Gregoriy Grinberg
+ * Description: Create a program that asks the user for the name of a movie, 
+ * 		the rating, the number of tickets sold for the movie and then asks if they would like to create the ratings for a new movie
+ * Due: 02/16/2020
+ * I pledge that I have completed the programming assignment independently.
+ * I have not copied the code from a student or any source.
+ * I have not given my code to any student.
+ * Print your Name here: Edward Gregg
+ */
+
+/**
  * Movie class, represents a Movie object
  * @author ralexander
  *
